@@ -1,5 +1,57 @@
-$colorBg: red;
+//Módulos
+@use 'variables';
+@use 'header';
+
+//Fontes
+@font-face {
+    font-family: Ringm;
+    src: url('../assets/fonts/RINGM___.TTF');
+}
+
+//Mixins
+@mixin title($fontSize: 24px) {
+    font-size: $fontSize;
+    color: variables.$colorTitle;
+    font-family: Ringm;
+}
+
+//Reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title--big {
+    @include title(32px);
+}
+
+.title--medium {
+    @include title;
+}
+
+.title--small {
+    @include title(16px);
+}
+
+.text--big {
+    font-size: 24px;
+}
+
+.text--medium {
+    font-size: 20px;
+}
+
+.text--small {
+    font-size: 14px;
+}
+
+.text--mini {
+    font-size: 12px;
+}
 
 body {
-    background-color: $colorBg;
+    background-color: variables.$colorBg;
 }

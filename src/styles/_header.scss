@@ -1,0 +1,39 @@
+@use 'variables';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variables.$colorBg;
+    
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 36px;max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &__img {
+            width: 40px;
+            margin-right: 22px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.button__links {
+            margin: 8px;
+            color: variables.$colorTitle;
+            text-decoration: none;
+            font-weight: bold;
+        }
