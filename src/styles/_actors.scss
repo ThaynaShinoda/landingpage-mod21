@@ -5,13 +5,11 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-
     &__list{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 30px;
         margin-top: 34px;
-        
         &__item{
             position: relative;
             overflow: hidden;

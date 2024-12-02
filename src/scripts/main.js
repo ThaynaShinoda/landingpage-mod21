@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //Usar na section WATCH
     const buttons = document.querySelectorAll('[data-tab-button]')
+
+    //Usar na section FAQ
+    const questions = document.querySelectorAll('[data-faq-question]')
 
 //Function para section WATCH
     for(let i = 0; i<buttons.length; i++) {
@@ -12,6 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
             removeActiveBtn()
             botao.target.classList.add('watch__tabs__button--is-active')
         })
+    }
+
+//Function para FAQ
+    for(let i=0; i<questions.length; i++) {
+        questions[i].addEventListener('click', openCloseAnswer)
     }
 })
 
@@ -31,4 +40,12 @@ function removeActiveBtn() {
     for(let i=0; i < buttons.length; i++) {
         buttons[i].classList.remove('watch__tabs__button--is-active')
     }
+}
+
+//Abre e fecha resposta do FAQ
+function openCloseAnswer(elemento) {
+    const classe = 'faq__list__item--is-open'
+    const elementoPai = elemento.target.parentNode
+
+    elementoPai.classList.toggle(classe)
 }
