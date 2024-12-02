@@ -4,6 +4,7 @@
 @use 'hero';
 @use 'sinopse';
 @use 'actors';
+@use 'watch';
 
 //Fontes
 @font-face {
@@ -53,6 +54,7 @@
 
 .text--mini {
     font-size: 12px;
+    color: variables.$colorText;
 }
 
 body {
