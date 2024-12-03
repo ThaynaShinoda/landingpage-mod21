@@ -18,7 +18,7 @@
             gap: 15px;
         }
 
-        @media (min-width: 769px) and (max-width: 992px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
             grid-template-columns: repeat(4, 1fr);
             gap: 15px;
         }
@@ -33,6 +33,11 @@
             @media (max-width: 768px) {
                 width: 100px;
                 height: 100px;
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 140px;
+                height: 140px;
             }
 
             &:nth-child(16) {
