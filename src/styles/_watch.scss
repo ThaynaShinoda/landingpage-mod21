@@ -3,8 +3,12 @@
 .watch {
     max-width: 1024px;
     margin: 60px auto;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+
+    @media (max-width: 768px) {
+        padding: 24px;
+    }
 
     &__tabs {
         display: flex;
@@ -38,6 +42,10 @@
 
             &__image{
                 width: 180px;
+
+                @media (max-width: 768px) {
+                    width: 120px;
+                }
             }
 
             &__plan {
@@ -59,12 +67,20 @@
                         justify-content: left;
                         color: variables.$colorText;
                         
+                        @media (max-width: 768px) {
+                            justify-content: center;
+                        }
                     }
             }
         }
 
         &--is-active {
             display: flex;
+
+            @media (max-width: 768px) {
+                display: grid;
+                place-items: center;
+            }
         }
     }
 }

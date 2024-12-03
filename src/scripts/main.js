@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 //Function para section WATCH
     for(let i = 0; i<buttons.length; i++) {
         buttons[i].addEventListener('click', function(botao) {
-            console.log(botao)
             const tabSelected = botao.target.dataset.tabButton
             const tab = document.querySelector(`[data-tab-id=${tabSelected}]`)
             hideList();
@@ -22,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     for(let i=0; i<questions.length; i++) {
         questions[i].addEventListener('click', openCloseAnswer)
     }
+
 })
 
 //Esconde List do WATCH

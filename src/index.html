@@ -14,25 +14,24 @@
                 <h1 class="title--medium">O Senhor dos Anéis</h1>
             </div>
             <ul class="header__links text--small">
-                <li class="header__links__item"><a class="button__links" href="#">Sinopse</a></li>
-                <li class="header__links__item"><a class="button__links" href="#">Elenco-Mapa-Trailers</a></li>
-                <li class="header__links__item"><a class="button__links" href="#">Onde assistir</a></li>
-                <li class="header__links__item"><a class="button__links" href="#">Perguntas frequentes</a></li>
+                <li class="header__links__item"><a class="button__links" href="#sinopse">Sinopse</a></li>
+                <li class="header__links__item"><a class="button__links" href="#actors">Personagens</a></li>
+                <li class="header__links__item"><a class="button__links" href="#watch">Onde assistir</a></li>
+                <li class="header__links__item"><a class="button__links" href="#faq">Perguntas frequentes</a></li>
             </ul>
         </nav>
     </header>
     <section class="hero">
         <img class="hero__image" src="../dist/assets/images/hero/hero-title-vinheta.png" alt="Personagens do filme O Senhor dos Anéis">
     </section>
-    <section class="sinopse">
+    <section id="sinopse" class="sinopse">
         <h2 class="sinopse__title title--big">Sinopses dos três filmes da trilogia O Senhor dos Anéis, de J.R.R. Tolkien, dirigidos por Peter Jackson</h2>
         <article class="sinopse__movie">
             <img class="sinopse__movie__poster" src="../dist/assets/images/section-sinopse/the-lord-of-the-rings-the-fellowship-of-the-ring.jpg" alt="Poster do filme O Senhor dos Anéis: A Sociedade do Anel (em inglês: The Lord of The rings - The Fellowship of The Ring)">
             <div class="sinopse__movie__description">
                 <h3 class="title--medium">O Senhor dos Anéis: A Sociedade do Anel (2001)</h3>
                 <h5 class="sinopse__movie__description__subtitle text--small">The Lord of the Rings: The Fellowship of The Ring</h5>
-                <p class="sinopse__movie__description__text text-
-                -medium">
+                <p class="sinopse__movie__description__text text--medium">
                     Frodo Bolseiro, um hobbit simples do Condado, é encarregado de uma missão crucial: destruir um anel mágico que possui um poder maligno imenso. Com a ajuda de um grupo diverso, incluindo o mago Gandalf, o elfo Legolas, o anão Gimli, o humano Aragorn e outros companheiros, Frodo começa uma jornada perigosa para destruir o Anel, o qual é cobiçado pelo Senhor das Trevas Sauron, que deseja usá-lo para dominar o mundo. A história começa com a formação da Sociedade do Anel, composta pelos heróis que devem proteger o Anel e impedir Sauron de conquistar a Terra-média.
                 </p>
             </div>
@@ -42,8 +41,7 @@
             <div class="sinopse__movie__description">
                 <h3 class="title--medium">O Senhor dos Anéis: As Duas Torres (2002)</h3>
                 <h5 class="sinopse__movie__description__subtitle text--small">The Lord of the Rings: The Two Towers</h5>
-                <p class="sinopse__movie__description__text text-
-                -medium">
+                <p class="sinopse__movie__description__text text--medium">
                     Após a separação da Sociedade, Frodo e Sam continuam sua jornada para o Monte da Perdição, onde o Anel deve ser destruído. Enquanto isso, Aragorn, Legolas e Gimli buscam resgatar o amigo Merry e Pippin, que foram capturados pelos orcs. Em Rohan, o rei Théoden é manipulado pelo servo de Sauron, Saruman, mas com a ajuda de Gandalf, Aragorn e seus aliados, ele começa a resistir. A guerra entre as forças do bem e do mal se intensifica, com a iminente batalha de Helm's Deep, onde os homens de Rohan enfrentam os exércitos de Saruman. Ao mesmo tempo, Frodo e Sam recebem a ajuda do misterioso Gollum, que os guia até Mordor, mas tem suas próprias intenções.
                 </p>
             </div>
@@ -53,14 +51,13 @@
             <div class="sinopse__movie__description">
                 <h3 class="title--medium">O Senhor dos Anéis: O Retorno do Rei (2003)</h3>
                 <h5 class="sinopse__movie__description__subtitle text--small">The Lord of the Rings: The Return of The King</h5>
-                <p class="sinopse__movie__description__text text-
-                -medium">
+                <p class="sinopse__movie__description__text text--medium">
                     A batalha final pela Terra-média começa. Aragorn reivindica seu destino como rei de Gondor, e, com a ajuda de seus amigos, lidera o exército de homens contra as forças de Sauron. Frodo e Sam, guiados por Gollum, estão cada vez mais próximos de Mordor, onde devem destruir o Anel. Enquanto isso, a grande guerra entre os exércitos de Sauron e as forças da liberdade culmina em uma batalha épica pelas portas de Minas Tirith. O destino de toda a Terra-média depende da coragem e da união dos heróis, enfrentando as forças da escuridão. O filme culmina com a destruição do Anel e a queda de Sauron, mas também com o sacrifício e o retorno à paz, além do preço pago pelos heróis em sua jornada.
                 </p>
             </div>
         </article>
     </section>
-    <section class="actors">
+    <section id="actors" class="actors">
         <h2 class="title--big">Personagens</h2>
         <ul class="actors__list">
             <li class="actors__list__item">
@@ -167,7 +164,7 @@
             </li>
         </ul>
     </section>
-    <section class="watch">
+    <section id="watch" class="watch">
         <h2 class="title--big">Onde assistir</h2>
         <nav class="watch__tabs">
             <button data-tab-button="streaming" class="watch__tabs__button watch__tabs__button--is-active"> <!--active-->
@@ -183,9 +180,15 @@
                 <img class="watch__list__item__image" src="../dist/assets/images/onde-assistir/hbo-max-logo.png" alt="HBO Max">
                 <h5 class="watch__list__item__plan text--big">Plano: Standart</h5>
                 <ul class="watch__list__item__options text--medium">
-                    <li class="watch__list__item__options__option"><img src="../dist/assets/images/check-section-watch.png" alt="Check">2 dispositivos ao mesmo tempo</li>
-                    <li class="watch__list__item__options__option"><img src="../dist/assets/images/check-section-watch.png" alt="Check">Resolução Full HD</li>
-                    <li class="watch__list__item__options__option"><img src="../dist/assets/images/check-section-watch.png" alt="Check">30 downloads para curtir off-line</li>
+                    <li class="watch__list__item__options__option">
+                        <img src="../dist/assets/images/check-section-watch.png" alt="Check">2 dispositivos ao mesmo tempo
+                    </li>
+                    <li class="watch__list__item__options__option">
+                        <img src="../dist/assets/images/check-section-watch.png" alt="Check">Resolução Full HD
+                    </li>
+                    <li class="watch__list__item__options__option">
+                        <img src="../dist/assets/images/check-section-watch.png" alt="Check">30 downloads para curtir off-line
+                    </li>
                 </ul>
                 <h5 class="watch__list__item__plan__price text--big">R$ 39,90/mês*</h5>
             </li>
@@ -224,27 +227,27 @@
         </ul>
         <p class="text--mini">*Os preços podem sofrer alterações </p>
     </section>
-    <section class="faq">
+    <section id="faq" class="faq">
         <h2 class="faq__title title--big">Perguntas frequentes</h2>
         <ul class="faq__list">
-            <li class="faq__list__item text--big">
-                <div class="faq__list__item__question" data-faq-question>
+            <li class="faq__list__item">
+                <div class="faq__list__item__question text--big" data-faq-question>
                     O que é o “Um Anel” e qual é o seu poder?
                 </div>
                 <div class="faq__list__item__answer text--medium">
                     O Um Anel é um objeto mágico criado pelo Senhor das Trevas, Sauron, com o intuito de dominar toda a Terra-média. Ele possui um poder imenso e corruptor, capaz de controlar outros anéis mágicos e corromper aqueles que tentam usá-lo. O Anel tem uma influência sedutora e destrutiva, corrompendo as mentes dos portadores e tornando-os obcecados por seu poder. Sua destruição é o objetivo central da trama da trilogia, já que Sauron só pode ser derrotado se o Anel for destruído.
                 </div>
             </li>
-            <li class="faq__list__item text--big">
-                <div class="faq__list__item__question" data-faq-question>
+            <li class="faq__list__item">
+                <div class="faq__list__item__question text--big" data-faq-question>
                     Quem são os Hobbits e qual o papel deles na história?
                 </div>
                 <div class="faq__list__item__answer text--medium">
                     Os hobbits são uma raça fictícia da Terra-média, parecida com humanos, mas menores e com uma vida simples e tranquila. Eles vivem no Condado e preferem a paz e a natureza. Na trilogia de O Senhor dos Anéis, o hobbit Frodo Bolseiro é o protagonista principal, encarregado de destruir o Um Anel. Outros hobbits importantes incluem Sam, seu leal amigo, e Merry e Pippin, que também desempenham papéis cruciais na luta contra o mal. O fato de hobbits serem pequenos e aparentemente comuns torna-os personagens poderosos na história, mostrando que até os mais humildes podem fazer grandes feitos quando se opõem à escuridão.
                 </div>
             </li>
-            <li class="faq__list__item text--big">
-                <div class="faq__list__item__question" data-faq-question>
+            <li class="faq__list__item">
+                <div class="faq__list__item__question text--big" data-faq-question>
                     Por que Gollum é tão importante na história?
                 </div>
                 <div class="faq__list__item__answer text--medium">
@@ -254,6 +257,9 @@
         </ul>
         <img class="faq__img" src="../dist/assets/images/frodo-anel.png" alt="Frodo e anel">
     </section>
+    <footer class="footer">
+        <p class="text--small">Desenvolvido por Thayná Rie Shinoda (Aluna de Desenvolvedor Full Stack Python - EBAC)</p>
+    </footer>
     <script src="../dist/scripts/main.js"></script>
 </body>
 </html>

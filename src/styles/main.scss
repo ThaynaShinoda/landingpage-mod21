@@ -6,6 +6,7 @@
 @use 'actors';
 @use 'watch';
 @use 'faq';
+@use 'footer';
 
 //Fontes
 @font-face {
@@ -30,6 +31,19 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px; /* Altura do seu header */
+
+    @media (max-width: 768px) {
+        scroll-padding-top: 135px;
+    }
+
+    @media (min-width: 769px) and (max-width: 816px) {
+        scroll-padding-top: 100px;
+    }
+}
+
 .title--big {
     @include title(32px);
 }
@@ -44,11 +58,27 @@
 
 .text--big {
     font-size: 24px;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        font-size: 22px;
+    }
 }
 
 .text--medium {
     font-size: 20px;
     color: variables.$colorText;
+
+    @media (max-width: 768px) { 
+        font-size: 16px;
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        font-size: 18px;
+    }
 }
 
 .text--small {
